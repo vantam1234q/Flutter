@@ -80,7 +80,7 @@ class FirebaseService {
       DestinationModel(
         id: '5',
         name: 'Halong Bay',
-        imageUrl: 'https://www.vietnam.travel/sites/default/files/2022-02/Halong-bay.jpg',
+        imageUrl: 'https://realbiz.vn/wp-content/uploads/2023/06/ha-long-bay-vinh-ha-long-la-mot-trong-nhung-diem-du-lich-noi-tieng-va-dep-nhat-o-viet-nam.jpg',
         rating: 4.7,
         reviewsCount: 400,
         description: 'Famous for emerald waters and thousands of limestone islands. Enjoy cruises, explore hidden caves, and soak in the breathtaking scenery.',
@@ -94,7 +94,7 @@ class FirebaseService {
       DestinationModel(
         id: '6',
         name: 'Sapa',
-        imageUrl: 'https://www.vietnamonline.com/images/attractions/sapa-vietnam.jpg',
+        imageUrl: 'https://th.bing.com/th/id/R.be1891e2fee4a4d6a26762414e88227b?rik=YnHvBadYb%2bW5OQ&pid=ImgRaw&r=0',
         rating: 4.5,
         reviewsCount: 350,
         description: 'Known for stunning terraced rice fields and rich cultural diversity. Trek through beautiful landscapes and engage with local ethnic groups.',

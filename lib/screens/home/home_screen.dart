@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_end/constants/app_icons.dart';
 import 'package:flutter_end/data/models/destination_model.dart'; // Nhập DestinationModel
 import 'package:flutter_end/data/models/firebase/firebase_service.dart';
+import 'package:flutter_end/screens/all_screens/all_screens.dart';
 import 'package:flutter_end/screens/favorite/favorite_screen.dart';
 import 'package:flutter_end/screens/home/widgets/header_item.dart';
 import 'package:flutter_end/screens/home/widgets/home_app_bar.dart';
@@ -121,7 +122,10 @@ class _HomeScreenState extends State<HomeScreen> {
               HeaderItem(
                 title: "Popular",
                 onSeeAll: () {
-                  debugPrint("See All Screen");
+                   Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AllDestinationsScreen()), // Điều hướng đến màn hình hiển thị tất cả chuyến đi
+              );
                 },
               ),
               // Hiển thị danh sách sản phẩm
@@ -143,7 +147,12 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 ),
               ),
-              HeaderItem(title: "Recommended", onSeeAll: () {}),
+              HeaderItem(title: "Recommended", onSeeAll: () {
+                     Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AllDestinationsScreen()), // Điều hướng đến màn hình hiển thị tất cả chuyến đi
+              );
+              }),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: GridView.builder(
